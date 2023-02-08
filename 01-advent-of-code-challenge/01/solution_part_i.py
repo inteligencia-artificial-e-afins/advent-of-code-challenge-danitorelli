@@ -1,4 +1,4 @@
-with open('sample.in', 'r') as f:
+with open('advent-of-code-challenge-danitorelli/01-advent-of-code-challenge/01/sample.in', 'r') as f:
     linhas = f.readlines()
     calorias = [entrada.strip() for entrada in linhas]
 

@@ -1,4 +1,6 @@
-with open('advent-of-code-challenge-danitorelli/01-advent-of-code-challenge/01/sample.in', 'r') as f:
+with open(
+    "advent-of-code-challenge-danitorelli/01-advent-of-code-challenge/01/sample.in", "r"
+) as f:
     linhas = f.readlines()
     calorias = [entrada.strip() for entrada in linhas]
 
@@ -6,12 +8,12 @@ with open('advent-of-code-challenge-danitorelli/01-advent-of-code-challenge/01/s
 soma_elfos = []
 soma_atual = 0
 for entrada in calorias:
-    if entrada != '':
+    if entrada != "":
         soma_atual += int(entrada)
-    elif entrada == '':
+    elif entrada == "":
         soma_elfos.append(soma_atual)
         soma_atual = 0
 soma_elfos.append(soma_atual)
 
 soma_elfos.sort(reverse=True)
-print(soma_elfos[0]+soma_elfos[1]+soma_elfos[2])
+print(soma_elfos[0] + soma_elfos[1] + soma_elfos[2])

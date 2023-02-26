@@ -17,3 +17,4 @@ for entrada in pares_atribuidos:
         pares += 1
 
 print(pares)
+
